@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Models\Post;
 use App\Models\User;
 use Auth;
@@ -80,7 +79,6 @@ class PostController extends Controller
     public function edit(Post $post)
 
     {
-
         return view('post.edit',compact('post'));
 
     }
@@ -96,18 +94,9 @@ class PostController extends Controller
     {
 
         $request->validate([
-
-
             'content' => 'required',
-
         ]);
-
-    
-
         $post->update($request->all());
-
-    
-
         return redirect()->route('posts.index')
 
                         ->with('success','Post updated successfully');
@@ -124,11 +113,7 @@ class PostController extends Controller
     public function destroy(Post $post)
 
     {
-
         $post->delete();
-
-    
-
         return redirect()->route('posts.index')->with('success','Post deleted successfully');
 
     }
