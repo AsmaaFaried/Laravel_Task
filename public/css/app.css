@@ -10914,3 +10914,10 @@ textarea.form-control-lg {
   left: 26%;
   text-align: center;
 }
+.posts-a{
+    width: 30%;
+    position: relative;
+    left: 38%;
+    font-size: 18px;
+    font-weight: bold;
+}
