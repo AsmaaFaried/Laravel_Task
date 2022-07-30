@@ -16,7 +16,7 @@ class AdminController extends Controller
     public function index()
     {
         $posts=Post::with("user")->latest()->paginate(10);
-        return view('admin.posts',compact('posts'))->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('admin.index',compact('posts'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
