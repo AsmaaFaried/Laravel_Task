@@ -14,8 +14,6 @@
 
                 @else
                 <a class="btn btn-outline-success posts-a" href="/admin/posts"> All Posts</a>
-
-                <a class="btn btn-success" href="{{ route('posts.index') }}"> Go to Posts</a>
                 @endif
 
             </div>
