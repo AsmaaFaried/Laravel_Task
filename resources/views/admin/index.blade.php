@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('page-title')
+    All Users Posts
+@endsection
 @section('content')
 
 <div class="cont">
@@ -15,7 +18,7 @@
 
     </div>
 
-   
+
 
     @if ($message = Session::get('success'))
 
@@ -27,7 +30,7 @@
 
     @endif
 
-   
+
 
     <table class="table table-bordered">
 
@@ -46,18 +49,18 @@
             <td>{{ $post->user->name}}</td>
 
             <td>{{ $post->content }}</td>
-          
+
         </tr>
 
         @endforeach
 
     </table>
 
-  
+
 
     {!! $posts->links() !!}
 
-      
+
 </div>
 @endsection
 

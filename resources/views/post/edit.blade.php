@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('page-title')
+    Edit Post
+@endsection
 @section('content')
 <div class="cont">
     <div class="row">
@@ -59,7 +62,7 @@
                 <button type="submit" class="btn btn-outline-primary m-3">Edit</button>
 
             </div>
-          
+
               <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 
 

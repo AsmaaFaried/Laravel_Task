@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('page-title')
+    Posts
+@endsection
 @section('content')
 <div class="cont">
     <div class="row">

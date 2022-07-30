@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('page-title')
+    Create Post
+@endsection
 @section('content')
 <div class="cont">
 <div class="row">
@@ -47,7 +50,7 @@
 
         </div>
 
-       
+
             <div class="col-xs-12 col-sm-12 col-md-12 text-center m-3">
                 <button type="submit" class="btn btn-outline-primary">Post</button>
 
